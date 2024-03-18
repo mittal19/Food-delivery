@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
       </profile>
-      <profile name="Annotation profile for Restaurant Listing" enabled="true">
+      <profile name="Annotation profile for Food Catalogue" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,12 +20,14 @@
         </processorPath>
         <module name="resturantListing" />
         <module name="userinfo" />
+        <module name="foodcatalogue" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka" options="-parameters" />
+      <module name="foodcatalogue" options="-parameters" />
       <module name="resturantListing" options="-parameters" />
       <module name="userinfo" options="-parameters" />
     </option>
